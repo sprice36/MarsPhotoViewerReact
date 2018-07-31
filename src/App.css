@@ -1,0 +1,43 @@
+body, html {
+     height: 100%;
+     width: 100%;
+     margin: 10px;
+}
+.roverContainer{
+  display: flex;
+  flex-direction: row;
+  height: 33%;
+  width: 33%;
+} 
+
+img{
+  height: 500px;
+  width: 500px;
+}
+.roverChoose{
+  display: flex;
+  flex-direction: block;
+  justify-content: flex-start;
+}
+
+.curiosity{
+  height: 500px;
+  width: 1000px; 
+}
+
+.opportunity{
+  height: 500px;
+  width: 1000px; 
+} 
+
+.spirit{
+  height: 500px;
+  width: 1000px; 
+}
+
+.roverbuttonContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+
+}
