@@ -10,8 +10,7 @@ class Mars extends React.Component {
 
         this.state = {
             photos : [], 
-            sol: []
-            
+           // sol : props.sol
         }
     }
    
@@ -19,12 +18,12 @@ componentDidMount(){
     this._getData();
     }
 
-_format = (roverPath) => {
-    return `http://mars-photos.herokuapp.com/api/v1/rovers${roverPath}/photos?sol=1000`;
+_format = (roverPath, solPath) => {
+    return `http://mars-photos.herokuapp.com/api/v1/rovers${roverPath}/photos?sol=${solPath}`;
 } 
 
 _getData = () => {
-    fetch(this._format(this.props.rover) , {
+    fetch(this._format(this.props.rover, this.props.sol) , {
         method: 'get'
     })
     .then((response) => {
