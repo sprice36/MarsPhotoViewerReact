@@ -9,7 +9,8 @@ body, html {
 
 .background {
   background-image: url("https://static-41.sinclairstoryline.com/resources/media/595b7746-7b3b-4bf0-bcd3-d68400f3a9ab-large16x9_marsFile.jpg?1532731663007") ;
-  background:stretch; 
+  background:stretch;
+  background: cover;
   background-size: 100%;
   height: 100%;
   width: 100%;
@@ -36,7 +37,6 @@ body, html {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-
   width: 100%;
 } 
 .sol{
@@ -44,8 +44,8 @@ body, html {
     
 }
 img{
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
 
 }
 .roverChoose{
@@ -78,8 +78,59 @@ p {
 }
 
 a{
-  padding: 150px;
-  padding-top: 180px;
+  padding: 140px;
+  padding-top: 100px;
   padding-bottom: 0px;
   color: tan;
+}
+
+@media screen and (max-width: 360px){
+  .solChoose{
+    display: flex;
+    flex-flow: wrap row;
+  }
+  .roverContainer {
+    display: flex;
+    flex-direction: column;
+    }
+    .background{
+      display: flex;
+      flex-direction: column;
+      background-image: none;
+    }
+
+    a {
+      display: flex;
+      flex-direction: column;
+      padding: 0px;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+
+  .roverContainer {
+    display: flex;
+    flex-direction: block;
+    display: none;
+  }
+  .background{
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+  }
+
+  a {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  
+}
+
+@media screen and (min-width: 1200px){
+  
+ 
+  
 }
