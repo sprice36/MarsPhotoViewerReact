@@ -1,4 +1,6 @@
-# MARS Photo Viewer
+# Mars Photo Viewer
+
+<img src = "https://static-41.sinclairstoryline.com/resources/media/595b7746-7b3b-4bf0-bcd3-d68400f3a9ab-large16x9_marsFile.jpg?1532731663007" />
 
 ## Table of Contents
 
