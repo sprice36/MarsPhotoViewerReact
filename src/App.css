@@ -1,18 +1,52 @@
 body, html {
      height: 100%;
      width: 100%;
-     margin: 10px;
+     margin:0px ;
+     padding: 0px;
+     border: 0px;
+     background: black;
 }
+
+.background {
+  background-image: url("https://static-41.sinclairstoryline.com/resources/media/595b7746-7b3b-4bf0-bcd3-d68400f3a9ab-large16x9_marsFile.jpg?1532731663007") ;
+  background:stretch; 
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+} 
+
+
+.App {
+  height: 100%;
+  width: 100%;
+  border:0px;
+ 
+}
+
+.solChoose {
+  display: flex; 
+  flex-direction: row;
+} 
 .roverContainer{
   display: flex;
   flex-direction: row;
-  height: 33%;
-  width: 33%;
-} 
+  justify-content: space-evenly;
 
+  width: 100%;
+} 
+.sol{
+  margin: 10px;
+    
+}
 img{
-  height: 500px;
-  width: 500px;
+  height: 300px;
+  width: 300px;
+
 }
 .roverChoose{
   display: flex;
@@ -20,24 +54,32 @@ img{
   justify-content: flex-start;
 }
 
+p {
+  color : tan;
+  margin: 0px;
+}
+
 .curiosity{
-  height: 500px;
-  width: 1000px; 
+  height: 350px;
+  width:  350px; 
+  margin: 10px;
 }
 
 .opportunity{
-  height: 500px;
-  width: 1000px; 
+  height: 350px;
+  width:  350px; 
+  margin: 10px;
 } 
 
 .spirit{
-  height: 500px;
-  width: 1000px; 
+  height: 350px;
+  width:  350px; 
+  margin: 10px;
 }
 
-.roverbuttonContainer{
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-
+a{
+  padding: 150px;
+  padding-top: 180px;
+  padding-bottom: 0px;
+  color: tan;
 }
